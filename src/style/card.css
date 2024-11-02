@@ -1,0 +1,43 @@
+.card {
+    background-color: #555;
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #2196f3;
+    transition-duration: 0.2s;
+}
+
+.card:hover::before {
+    width: 100%;
+}
+
+.card .defaultInfo img {
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.card .defaultInfo {
+    display: flex;
+    align-items: center;
+}
+
+.card .opinions-content {
+    width: 90%;
+    margin: auto;
+}
+
+.card .opinions-content p {
+    line-height: 30px;
+}
