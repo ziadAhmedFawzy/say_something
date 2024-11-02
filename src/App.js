@@ -21,7 +21,7 @@ export default function App() {
     })
     .then((res) => {
         if (!res.ok) {
-            throw new Error("هناك مشكلة في إرسال البيانات");
+            throw new Error("هناك مشكلة في إرسال البيانات!");
         }
         return res.json();
     })
