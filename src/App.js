@@ -9,7 +9,7 @@ export default function App() {
   const HandleSubmit = (e) => {
     e.preventDefault();
     // send-opinions
-    fetch("https://server-eight-smoky.vercel.app/send-opinions", {
+    fetch("https://server-eta-pied-79.vercel.app/send-opinions", {
       method: "POST",
       headers: {
           "Content-Type": "application/json",
@@ -36,7 +36,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    fetch("https://server-eight-smoky.vercel.app/get-opinions", {
+    fetch("https://server-eta-pied-79.vercel.app/get-opinions", {
       method: "GET",
       headers: {
         "Content-Type":"application/json",
